@@ -15,8 +15,8 @@ class AW_INTRO
 {
 	idd=-1;
 	movingenable=false;
-	
-	class controls 
+
+	class controls
 	{
 ////////////////////////////////////////////////////////
 // GUI EDITOR OUTPUT START (by BACONMOP, v1.063, #Murapy)
@@ -158,7 +158,7 @@ class Rule_10: RscText
 class AW_Intro_and_TS_picture: RscPicture
 {
 	idc = 1200;
-	text = "media\images\splash.paa";
+	text = "tmg_custom\media\images\splash.paa";
 	x = 0;
 	y = 0;
 	w = 1;
@@ -273,7 +273,6 @@ class Hint_7: RscText
 // GUI EDITOR OUTPUT END
 ////////////////////////////////////////////////////////
 
-	
-};
-};
 
+};
+};
