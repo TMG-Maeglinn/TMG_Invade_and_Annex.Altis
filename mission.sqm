@@ -1727,7 +1727,7 @@ class Mission
 					skill=0.60000002;
 					text="s1";
 					init="(group this) setGroupId [""VORTEX""];";
-					description="(TS3: 93.190.139.173:10039) Vortex Pilot";
+					description="(TS3: ts3paris.gtxgaming.co.uk:9995) Vortex Pilot";
 				};
 				class Item1
 				{
@@ -1741,7 +1741,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="s3";
-					description="(TS3: 93.190.139.173:10039) Vortex Pilot";
+					description="(TS3: ts3paris.gtxgaming.co.uk:9995) Vortex Pilot";
 				};
 				class Item2
 				{
@@ -1754,7 +1754,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="s4";
-					description="(TS3: 93.190.139.173:10039) Vortex Pilot";
+					description="(TS3: ts3paris.gtxgaming.co.uk:9995) Vortex Pilot";
 				};
 				class Item3
 				{
@@ -1768,7 +1768,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="s5";
-					description="(TS3: 93.190.139.173:10039) Vortex Pilot";
+					description="(TS3: ts3paris.gtxgaming.co.uk:9995) Vortex Pilot";
 				};
 				class Item4
 				{
@@ -1779,7 +1779,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="s2";
-					description="(TS3: 93.190.139.173:10039) Vortex Pilot";
+					description="(TS3: 9ts3paris.gtxgaming.co.uk:9995) Vortex Pilot";
 				};
 			};
 		};
@@ -13178,7 +13178,7 @@ class Mission
 		{
 			position[]={15956.532,13.939746,17016.742};
 			name="Ts";
-			text="TS3 = 93.190.139.173:10039";
+			text="TS3 = ts3paris.gtxgaming.co.uk:9995";
 			type="mil_triangle";
 			colorName="ColorRed";
 		};
@@ -13244,7 +13244,7 @@ class Mission
 		{
 			position[]={21451.32,-0.010312778,32456.951};
 			name="Ts_2";
-			text="TS3 = 93.190.139.173:10039";
+			text="TS3 = ts3paris.gtxgaming.co.uk:9995";
 			type="mil_triangle";
 			colorName="ColorRed";
 		};
@@ -13292,7 +13292,7 @@ class Mission
 		{
 			position[]={807.47266,-0.0036210148,1895.2146};
 			name="Ts_4";
-			text="TS3 = 93.190.139.173:10039";
+			text="TS3 = ts3paris.gtxgaming.co.uk:9995";
 			type="mil_triangle";
 			colorName="ColorRed";
 		};
@@ -13316,7 +13316,7 @@ class Mission
 		{
 			position[]={21520.201,-0.0043530478,29318.244};
 			name="Ts_5";
-			text="TS3 = 93.190.139.173:10039";
+			text="TS3 = ts3paris.gtxgaming.co.uk:9995";
 			type="mil_triangle";
 			colorName="ColorRed";
 		};

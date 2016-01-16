@@ -2,7 +2,7 @@
 
 author = Rarek, AW, Quiksilver, edited by PN & TMG;					// Visible when loading mission
 onLoadName = "Invade & Annex 2.85C";						// Visible when loading mission
-OnLoadMission = "Welcome to the PN - TMG public Invade and Annex server ... Join us on TeamSpeak at 93.190.139.173:10039";
+OnLoadMission = "Welcome to the PN - TMG public Invade and Annex server ... Join us on TeamSpeak at ts3paris.gtxgaming.co.uk:9995";
 loadScreen = "tmg_custom\media\images\loading.jpg";				// Visible when loading mission
 overviewPicture = "tmg_custom\media\images\loading.jpg";			// Visible when selecting mission
 
