@@ -1,13 +1,13 @@
 /*
 @filename: init.sqf
 Author:
-	
+
 	Quiksilver
 
 Last modified:
 
 	12/05/2014
-	
+
 Description:
 
 	Things that may run on both server and client.
@@ -27,3 +27,8 @@ for [ {_i = 0}, {_i < count(paramsArray)}, {_i = _i + 1} ] do {
 
 
 call compile preprocessFile "scripts\=BTC=_revive\=BTC=_revive_init.sqf";		// revive
+
+// TMG customizations
+
+tawvd_disablenone = true; 	// disable no grass button
+tawvd_maxRange = 10000;			// max view distance 10000m
