@@ -1,8 +1,8 @@
 //------------------------- On Load
 
-author = Rarek, AW, Quiksilver, edited by PN & TMG;					// Visible when loading mission
+author = Rarek, AW, Quiksilver, edited by TMG;					// Visible when loading mission
 onLoadName = "Invade & Annex 2.85C";						// Visible when loading mission
-OnLoadMission = "Welcome to the PN - TMG public Invade and Annex server ... Join us on TeamSpeak at ts3paris.gtxgaming.co.uk:9995";
+OnLoadMission = "Welcome to the TMG public Invade and Annex server ... Join us on TeamSpeak at 93.190.139.173:10039";
 loadScreen = "tmg_custom\media\images\loading.jpg";				// Visible when loading mission
 overviewPicture = "tmg_custom\media\images\loading.jpg";			// Visible when selecting mission
 
@@ -49,19 +49,19 @@ corpseRemovalMaxTime = 120;								// Max time before removal
 
 //------------------------- Includes / Functions
 
-#include "scripts\VAS\menu.hpp" 						// VAS
-#include "scripts\taw_vd\dialog.hpp" 					// TAW View Distance
+//#include "scripts\VAS\menu.hpp" 						// VAS
+//#include "scripts\taw_vd\dialog.hpp" 					// TAW View Distance
 //#include "tmg_custom\scripts\taw_vd\GUI.h"
 #include "scripts\vehicle\crew\common.hpp"  			// vehicle crew hud
-#include "scripts\=BTC=_revive\=BTC=_respawn.h"			// BTC medic revive system
+//#include "scripts\=BTC=_revive\=BTC=_respawn.h"			// BTC medic revive system
 #include "dialogs.hpp"									// Intro
 #include "scripts\voice_control\voiceControl.cpp"		// Voice Control
 
 class CfgFunctions
 	{
 		#include "functions\cfgfunctions.hpp"			// Integrated I&A functions
-		#include "scripts\VAS\cfgfunctions.hpp"			// VAS
-  	#include "scripts\taw_vd\CfgFunctions.hpp"		// View distance
+	//	#include "scripts\VAS\cfgfunctions.hpp"			// VAS
+  //	#include "scripts\taw_vd\CfgFunctions.hpp"		// View distance
 	    class FETT {									// Curator synch http://forums.bistudio.com/showthread.php?176691-Making-placed-units-be-editable-for-every-Zeus
 	        class curator {
 	            class eventHandlers {postInit = 1;};
@@ -116,7 +116,7 @@ class Params
 				title = "Enemy Left Threshold";
 				values[] = {1,2,3,4,5,6,7,8,9,10};
 				texts[] = {"1","2","3","4","5","6","7","8","9","10"};
-				default = 9;
+				default = 5;
 			};
 
 		class RadioTowerMineFieldChance {
@@ -214,7 +214,7 @@ class Params
 			title = "AO NUMBER OF ENEMIES IN BUILDINGS";
 			values[] = {0,5,10,15,20,25,30,35,40,45,50};
 			texts[] = {"DISABLED","5","10","15","20","25","30","35","40","45","50"};
-			default = 30;
+			default = 40;
 		};
 
 		class EasterEggs {
@@ -249,7 +249,7 @@ class Params
 			title = "Restrict Marksman Weapons";
 			values[] = {0,1};
 			texts[] = {"DISABLED","ENABLED"};
-			default = 1;
+			default = 0;
 		};
 
 		class CasFixedWingSupport {
@@ -291,7 +291,7 @@ class Params
 		title = "Fast Rope";
 		values[] = {0,1};
 		texts[] = {"DISABLED","ENABLED"};
-		default = 1;
+		default = 0;
 	};
 
 	class HeliDrop {
