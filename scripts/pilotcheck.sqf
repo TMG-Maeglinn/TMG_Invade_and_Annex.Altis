@@ -41,12 +41,13 @@ _iampilot = ({typeOf player == _x} count _pilots) > 0;
  Tam:				76561198190168155
  Maeglinn:	76561197963598125
  Deadshoit:	76561198060917128
+ Bramjam:		76561198091762971
 
  */
 
 _uid = getPlayerUID player;
-//						Rowland							Tabs 								Tam 								Maeglinn						Deadshot
-_whitelist = ["76561198149859456","76561198029840531","76561198190168155","76561197963598125","76561198060917128"];
+//						Rowland							Tabs 								Tam 								Maeglinn						Deadshot						Bramjam
+_whitelist = ["76561198149859456","76561198029840531","76561198190168155","76561197963598125","76561198060917128","76561198091762971"];
 
 if (_uid in _whitelist) exitWith {};
 

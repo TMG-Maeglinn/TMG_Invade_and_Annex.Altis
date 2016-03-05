@@ -1,13 +1,13 @@
 /*
 @filename: onPlayerRespawn.sqf
 Author:
-	
+
 	Quiksilver
 
 Last modified:
 
 	29/10/2014 ArmA 1.32 by Quiksilver
-	
+
 Description:
 
 	Client scripts that should execute after respawn.
@@ -51,9 +51,9 @@ if (_iamuavop) then {
 
 //============================= non-pilots units fastrope
 
-if (PARAMS_HeliRope != 0) then {
-	player addAction ["Fast Rope (Press Space)", zlt_fnc_fastrope, [], 99, false, false, '','not zlt_mutexAction and count ((vehicle player) getvariable ["zlt_ropes", []]) != 0 and player != driver vehicle player'];
-};
+//if (PARAMS_HeliRope != 0) then {
+//	player addAction ["Fast Rope (Press Space)", zlt_fnc_fastrope, [], 99, false, false, '','not zlt_mutexAction and count ((vehicle player) getvariable ["zlt_ropes", []]) != 0 and player != driver vehicle player'];
+//};
 
 //============================= Mobile arsenal/Mobile Vas
 

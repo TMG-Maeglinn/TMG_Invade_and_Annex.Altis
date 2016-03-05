@@ -1,35 +1,35 @@
 /*
-| Author: 
+| Author:
 |
 |	Quiksilver.
 |_____
 |
-| Description: 
-|	
+| Description:
+|
 |	Created: 26/11/2013.
 |	Last modified:29/10/2014.
 |	Coded for I&A and hosted on allfps.com.au servers.
 |	You may use and edit the code.
-|	You may not remove any entries from Credits without first removing the relevant author's contributions, 
+|	You may not remove any entries from Credits without first removing the relevant author's contributions,
 |	or asking permission from the mission authors/contributors.
 |	You may not remove the Credits tab, without consent of Ahoy World or allFPS.
 | 	Feel free to re-format or make it look better.
 |_____
 |
-| Usage: 
-|	
-|	Search below for the diary entries you would like to edit. 
+| Usage:
+|
+|	Search below for the diary entries you would like to edit.
 |	DiarySubjects appear in descending order when player map is open.
 |	DiaryRecords appear in ascending order when selected.
 |_____
 |
 | Credit:
 |
-|	Invade & Annex 2.00 was developed by Rarek [ahoyworld.co.uk] with hundreds of hours of work 
+|	Invade & Annex 2.00 was developed by Rarek [ahoyworld.co.uk] with hundreds of hours of work
 |	The current version was developed by Quiksilver with hundreds more hours of work.
-|	
+|
 |	Contributors: Razgriz33 [AW], Jester [AW], Kamaradski [AW], David [AW], chucky [allFPS].
-|	
+|
 |	Please be respectful and do not remove credit.
 |______________________________________________________________*/
 
@@ -56,15 +56,15 @@ player createDiaryRecord ["rules",
 <br />
 <br />Guideline for enforcement:
 <br />
-<br />-	Innocent rule violation and disruptive behavior: 
+<br />-	Innocent rule violation and disruptive behavior:
 <br />
 <br />		= Verbal / Written request to cease, or warning.
-<br /> 
+<br />
 <br />-	Minor or first-time rule violation:
 <br />
 <br />		= Kick, or 0 - 3 day ban.
 <br />
-<br />-	Serious or repetitive rule violation: 
+<br />-	Serious or repetitive rule violation:
 <br />
 <br />		= 3 - 7 day ban.
 <br />
@@ -85,7 +85,7 @@ player createDiaryRecord ["rules",
 <br />2. Intentional team-killing will not be tolerated.
 <br />3. Excessive, unintentional team-killing may result in a Kick/Temp ban.
 <br />4. Unnecessary destruction of BLUFOR vehicles will not be tolerated.
-<br />5. Verbal abuse and bullying will not be tolerated. 
+<br />5. Verbal abuse and bullying will not be tolerated.
 <br />6. Firing a weapon on base--unless at an enemy--may result in a Kick/Temp ban.
 <br />7. Griefing and obstructive play will not be tolerated.
 <br />8. Excessive mic spamming, especially of Side and Global channels, will not be tolerated.
@@ -104,7 +104,7 @@ player createDiaryRecord ["mods",
 "
 <br /> Mods currently running on server (subject to change without notice):<br /><br />
 
-<br />- None at this time. 
+<br />- None at this time.
 "
 ]];
 
@@ -112,22 +112,76 @@ player createDiaryRecord ["mods",
 [
 "Mods Allowed",
 "
-<br /> Mods currently allowed (subject to change without notice):<br /><br />
+<br /> Mods currently allowed (subject to change without notice) available from Steam Workshop:<br /><br />
 
-<br />- CBA - 1.00 beta5 - Required to run the below mods.
-		http://www.armaholic.com/page.php?id=18768<br /><br />
-		
-<br />- JSRS - 2.0 and 2.1 - Enhanced sounds and audio.
-		http://www.armaholic.com/page.php?id=22150<br /><br />
-		
-<br />- Blastcore - R3 - Enhanced visual effects.
-		http://www.armaholic.com/page.php?id=23899<br /><br />
-		
-<br />- ShackTac Fireteam HUD - v140302 - Situational awareness HUD
-		http://www.armaholic.com/page.php?id=9936<br /><br />
+<br />- CBA<br /><br />
 
-<br />- VTS Weapon resting - v05 - Simulates 'bipod' and weapon resting.
-		http://www.armaholic.com/page.php?id=20817
+<br />- ACE3<br /><br />
+
+<br />- ShackTac User Interface - Situational awareness HUD<br /><br />"
+
+]];
+
+player createDiaryRecord ["mods",
+[
+"ACE3 basic medical system",
+"
+<br />
+When hit, units start to lose blood depending on the severity of their wounds. Once the level of blood falls below a certain threshold, the unit will fall unconscious and eventually die. Units will also fall unconscious when sustaining large amounts of damage at once or from high amounts of pain.
+<br />
+<br />
+There are two type of wounds:
+<br />
+- Yellow: you need one bandage to heal it.
+- Red: you need two bandages to heal it.
+<br />
+<br />
+Items a medic needs to bring:
+<br />
+- Plenty of bandages. All bandages have the same effect so easiest is to just grab one type.<br />
+- Morphine. This is used to treat pain.<br />
+- Epinephrine. Wakes up the patient when they are unconscious.<br />
+<br />
+<br />
+Items each soldier should bring:
+- Bandages. Small wounds can be healed by yourself and if the medic runs out he can use yours! 5-10 should be enough.<br />
+- Morphine. When you get shot and are in pain you can use this to reduce the pain. If you bring 5 that should be enough.<br />
+<br />
+<br />
+Treating a patient:
+<br />
+Step 1: Is the patient responsive?<br />
+•Yes: Ask him if he has wounds / he is in pain.<br />
+•No: Go to step 2.<br />
+<br />
+Step 2: Is the patient wounded?<br />
+•Yes: Treat the wounds and go to step 3.<br />
+•No: Skip this step.<br />
+<br />
+Step 3: Is the patient in pain?<br />
+•Yes: Give him morphine.<br />
+•No: Skip this step.<br />
+<br />
+Step 4: Did the patient lose a lot of blood?<br />
+•Yes: Give blood via IV.<br />
+•No: Go to step 5.<br />
+•No and patient responsive: You’re done.<br />
+<br />
+Step 5<br />
+•If at this point the patient is still not back on its feet it’s time to use an epinephrine Autoinjector.<br />
+<br />
+<br />
+Revive<br />
+<br />
+To revive a fallen soldier:<br />
+- A unit in the revive state will be unconscious and will stay unconscious until it is either woken up or the revive timer runs out (10m after going unconscious).<br />
+- A unit in the revive state can’t die from any source of damage, only the timer ending can kill it.<br />
+- Each successful CPR (full bar) will increase the time the unit can stay in the revive state before dying.<br />
+- To wake up a patient treat all of his wounds, make sure he isn’t in pain and then use epinephrine.<br />
+<br />
+
+
+
 "
 ]];
 
@@ -144,9 +198,9 @@ player createDiaryRecord ["teamspeak",
 
 player createDiaryRecord ["teamspeak",
 [
-"AHOY WORLD",
+"Tactical Military Gaming",
 "
-<br /> Address: ts.ahoyworld.co.uk
+<br /> Address: 93.190.139.173:10039
 <br />
 <br /> Visitors and guests welcome!
 "
@@ -188,7 +242,7 @@ player createDiaryRecord ["faq",
 "Squads",
 "
 <br /><font size='16'>Q:</font> How do I join a squad?<br />
-<br /><font size='16'>A:</font> 
+<br /><font size='16'>A:</font>
 <br /> 1. Hold 'T'.
 <br /> 2. While holding T, use your scroll wheel to interact.
 <br /> 3. You can interact with the person you are looking at, or those within a 5m radius.
@@ -210,7 +264,7 @@ player createDiaryRecord ["faq",
 "Bipod",
 "
 <br /><font size='16'>Q:</font> How do I deploy bipod?<br />
-<br /><font size='16'>A:</font> Open the Mods tab and look for VTS weaponresting. 
+<br /><font size='16'>A:</font> Open the Mods tab and look for VTS weaponresting.
 <br /> 1. Download and follow the instructions.
 <br /> 2. Use when you are in a stable firing position.
 <br /> 3. Default keys: Ctrl + Spacebar
@@ -224,7 +278,7 @@ player createDiaryRecord ["faq",
 "Medics",
 "
 <br /><font size='16'>Q:</font> Why can't I heal him?<br />
-<br /><font size='16'>A:</font> There are three conditions you must pass in order to revive a fallen comrade. 
+<br /><font size='16'>A:</font> There are three conditions you must pass in order to revive a fallen comrade.
 <br /> 1. You must be in a Medic / Paramedic role.
 <br /> 2. You must have a Medkit.
 <br /> 3. You must have at least one First Aid Kit.
@@ -238,331 +292,16 @@ player createDiaryRecord ["faq",
 <br /><font size='16'>Q:</font> Can I use the Mortars?
 <br /><font size='16'>A:</font> Yes, However if you are not in the mortar gunner role you will not have acess to the Artillery Computer.<br />
 <br /><font size='16'>Q:</font> How do I use the Mortar without the computer?
-<br /><font size='16'>A:</font> You have to manually find the target with the sight. Here are some steps to use the mortar. 
+<br /><font size='16'>A:</font> You have to manually find the target with the sight. Here are some steps to use the mortar.
 <br /> 1. Press the F key to select the firing distance.
 <br /> 2. If you are in line-of-sight just put the cursor on the target and use the page up and page down keys to change the elevation.
-<br /> 3. Fire!<br /> 
+<br /> 3. Fire!<br />
 <br /><font size='16'>Here is a youtube video that can explain in more detail.<br />
 <br /> https://www.youtube.com/watch?v=SCCvXfwzeAU
 "
 ]];
 
-//-------------------------------------------------- Change Log
 
-player createDiaryRecord ["changelog",
-[
-"2.79",
-"
-<br />- [CHANGED] Hummingbird texture.
-<br />- [CHANGED] 1 Ghosthawk changed to a helcat.
-<br />- [CHANGED] Pawnee should now have a different texture.
-<br />- [CHANGED] Changelog.
-<br />- [TWEAKED] Pawnee side mission spawn rate increased.
-<br />- [TWEAKED] Wipeout and Neophron now have 60 flares.
-<br />- [TWEAKED] Some minor things added at spawn.
-<br />- [ADDED] Minigun Dispersion.
-<br />- [ADDED] Mortar to side mission reward.
-<br />- [ADDED] LaForte to Zeus.
-<br />- [ADDED] Spartan program.
-<br />- [ADDED] New AO's.
-<br />- [ADDED] Speed of sound to accepted mods.
-<br />- [ADDED] Tao Folding Map to accepted mods.
-<br />- [ADDED] Helmet Mounted Displays Mod to accepted mods.
-<br />- [ADDED] Midrange Terrain Texture to accepted mods.
-<br />- [ADDED] Rule against landing helicopters in the main spawn.
-<br />- [FIXED] Exploit where jet could bypass 5 minutes repair timer.
-"
-]];
-
-player createDiaryRecord ["changelog",
-[
-"2.79A",
-"
-<br />- [ADDED] AH-9 Pawnee GAU - 19 variant to side missions rewards.
-<br />- [ADDED] Rabbit to side missions rewards (used to spawn GAU-19).
-<br />- [FIXED] Mortar side mission reward should no longer be restricted.
-<br />- [FIXED] Secure Chopper side missions should now work.
-<br />- [FIXED] Minigun dispersion to Ghosthawk turrets.
-"
-]];
-
-player createDiaryRecord ["changelog",
-[
-"2.79B",
-"
-<br />- [CHANGED] Now Use Quiksilver's player markers.
-<br />- [CHANGED] Rifleman (AT) is now a Missile Spec. (AT).
-<br />- [ADDED] All players may now revive when within 5 meters of a Medical HEMTT.
-<br />- [ADDED] New Medivac LZ.
-<br />- [ADDED] Combat Life Saviour Team.
-<br />- [ADDED] Arsenal is back on the VASman.
-"
-]];
-
-player createDiaryRecord ["changelog",
-[
-"2.79D",
-"
-<br />- [FIXED] Rifleman(AT) should now be fixed again.
-<br />- [FIXED] Artillery should now fire.
-<br />- [TWEAKED] Player Icons should now display further away.
-<br />- [TWEAKED] Players now need a FAK to revive at a Medical HEMTT.
-<br />- [TWEAKED] Tweaked some aspects of BTC to improve performance.
-<br />- [CHANGED] All playable units should now be attached to Zues.
-<br />- [ADDED] 5th pilot slot and helicopter.
-<br />- [ADDED] Bobcat is now at spawn.
-<br />- [ADDED] Quick save option for gear.
-"
-]];
-
-player createDiaryRecord ["changelog",
-[
-"2.79F",
-"
-<br />- [TWEAKED] Some behind the scenes stuff.
-<br />- [ADDED] Some parameters for better before mission customization.
-"
-]];
-
-player createDiaryRecord ["changelog",
-[
-"2.80",
-"
-<br />- [ADDED] CH-47 Huron to helicopters.
-<br />- [ADDED] Mi-290 Taru to Side mission rewards.
-<br />- [ADDED] Huron crate spawner.
-"
-]];
-
-player createDiaryRecord ["changelog",
-[
-"2.80A",
-"
-<br />- [CHANGED] Reverted back to Quicksilver's icons.
-<br />- [REMOVED] Defend AO.
-<br />- [FIXED] Rearm UAV.sqf was re-added.
-"
-]];
-
-player createDiaryRecord ["changelog",
-[
-"2.81",
-"
-<br />- [ADDED] CAP(close air patrol) buzzard now spawns at mission start with 10 min respawn.
-<br />- [ADDED] Headless Client (please report fps changes to our forums).
-<br />- [TWEAKED] Enemy Jets should now have a lower AI setting.
-<br />- [FIXED] UAV's now spawn with ammo again.
-<br />- [FIXED] The supply crates should not spawn in properly.
-"
-]];
-
-player createDiaryRecord ["changelog",
-[
-"2.81A",
-"
-<br />- [ADDED] Mortar Gunner role has been added.
-<br />- [TWEAKED] Offloaded more AI to the HC.
-<br />- [TWEAKED] Spawn chances for AH-9 Pawnee and AH-9 Pawnee GAU-19 increased.
-<br />- [CHANGED] SM Reward Mortar is now attached to the bed of a truck.
-<br />- [CHANGED] UAV Operator is now in the same squad as the Mortar Gunner.
-<br />- [CHANGED] Artillery Computer has been disabled for all players except for the Mortar Gunner.
-"
-]];
-
-player createDiaryRecord ["changelog",
-[
-"2.81B",
-"
-<br />- [TWEAKED] Spawn rates of Jets in Side mission rewards.
-<br />- [TWEAKED] Moved TS markers to be more in yo face.
-<br />- [TWEAKED] Added VAS, VA, and view distance to man standing in pilot spawn.
-<br />- [TWEAKED] Headless Client Public Variable now in init player local.
-<br />- [CHANGED] Base Protection changed to a HintC.
-<br />- [ADDED] Pancake to Spartan Program.
-<br />- [ADDED] Ahoy World Intro added.
-<br />- [FIXED] Repair pad at AAF Airfield no longer repairs planes.
-"
-]];
-
-player createDiaryRecord ["changelog",
-[
-"2.81C",
-"
-<br />- [FIXED] Issue with Intro Popup and Headless Client (hopefully).
-<br />- [FIXED] Minor script error for the fuel canister.
-"
-]];
-
-player createDiaryRecord ["changelog",
-[
-"2.81D",
-"
-<br />- [FIXED] Issue with Intro Popup and Headless Client (hopefully)(for real this time).
-<br />- [ADDED] Billboards.
-"
-]];
-
-player createDiaryRecord ["changelog",
-[
-"2.81E",
-"
-<br />- [FIXED] Removed headlessclient variable from initPlayerLocal.
-"
-]];
-
-player createDiaryRecord ["changelog",
-[
-"2.81F",
-"
-<br />- [FIXED] headlessclient variable is in init now.
-<br />- [ADDED] Chon is now Spartan.
-<br />- [ADDED] Ahoy EU 3 advertisement.
-"
-]];
-player createDiaryRecord ["changelog",
-[
-"2.81G",
-"
-<br />- [FIXED] HeadlessClient (If it is still not fixed I will cry).
-"
-]];
-
-player createDiaryRecord ["changelog",
-[
-"2.82",
-"
-<br />- [CHANGED] AO enemies now spawn using DAC zones.
-"
-]];
-
-player createDiaryRecord ["changelog",
-[
-"2.82A",
-"
-<br />- [CHANGED] AO enemies now use a mix of DAC and old method.
-<br />- [ADDED] Mattadee to Spartan.
-<br />- [ADDED] Hint for AW Members that joined.
-"
-]];
-
-player createDiaryRecord ["changelog",
-[
-"2.82B",
-"
-<br />- [FIXED] Typo in hint for members.
-<br />- [TWEAKED] DAC AI.
-"
-]];
-
-player createDiaryRecord ["changelog",
-[
-"2.82C",
-"
-<br />- [FIXED] Script Error in initPlayerLocal (wrong slashes).
-<br />- [ADDED] Cam Shake fix added to VAS Man.
-"
-]];
-
-player createDiaryRecord ["changelog",
-[
-"2.82D",
-"
-<br />- [TWEAKED] Minor script tweaks.
-"
-]];
-
-player createDiaryRecord ["changelog",
-[
-"2.82E",
-"
-<br />- [ADDED] Marksman DLC weapons are restricted to the respective classes.
-<br />- [CHANGED] Thermal Optics are restricted to Squad Leaders.
-<br />- [CHANGED] Orca to Hellcat.
-"
-]];
-
-player createDiaryRecord ["changelog",
-[
-"2.83",
-"
-<br />- [REMOVED] DAC AI to the AO.
-<br />- [ADDED] Headless Client should now properly work, however, still issues if it has to reconnect.
-"
-]];
-
-
-player createDiaryRecord ["changelog",
-[
-"2.83B",
-"
-<br />- [REMOVED] DAC.
-<br />- [REMOVED] Pancake from spartan.
-<br />- [TWEAKED] Hellcat changed to Ghost-Hwak.
-<br />- [ADDED] BIS's group management.
-"
-]];
-
-
-player createDiaryRecord ["changelog",
-[
-"2.83E",
-"
-<br />- [TWEAKED] Spawn chances for reward vehicles.
-<br />- [ADDED] Pawnee with GMG to SM rewards.
-"
-]];
-
-player createDiaryRecord ["changelog",
-[
-"2.83F",
-"
-<br />- [CHANGED] BillBoards at spawn now choose a random image when you load.
-"
-]];
-
-player createDiaryRecord ["changelog",
-[
-"2.83G",
-"
-<br />- [ADDED] More Billboards.
-"
-]];
-
-player createDiaryRecord ["changelog",
-[
-"2.83J",
-"
-<br />- [ADDED] Stuff.
-"
-]];
-
-player createDiaryRecord ["changelog",
-[
-"2.84",
-"
-<br />- [REMOVED] Lots of PublicVaraiables.
-<br />- [FIXED] Statics should not be deleted as harshly.
-<br />- [ADDED] Billboards.
-"
-]];
-
-player createDiaryRecord ["changelog",
-[
-"2.85",
-"
-<br />- [FIXED] GMG Technical.
-<br />- [ADDED] FOB and FOB mission system.
-"
-]];
-
-player createDiaryRecord ["changelog",
-[
-"2.85A",
-"
-<br />- [FIXED] FOB trucks should now Despawn.
-<br />- [ADDED] Utility for zues to stop Main AO.
-"
-]];
 //-------------------------------------------------- Credits
 
 player createDiaryRecord ["credits",
@@ -573,14 +312,14 @@ player createDiaryRecord ["credits",
 
 		- <font size='16'>Rarek</font> - Ahoy World (ahoyworld.co.uk)<br /><br />
 		- <font size='16'>Quiksilver</font><br />
-		
+
 <br />Contributors:<br /><br />
 		- Jester - Ahoy World (ahoyworld.co.uk)<br />
 		- Razgriz33 - Ahoy World (ahoyworld.co.uk)<br />
 		- Kamaradski - Ahoy World (ahoyworld.co.uk)<br />
 		- BACONMOP - Ahoy World (ahoyworld.co.uk)<br />
 		- chucky - All FPS (allfps.com.au)<br /><br />
-		
+
 <br />Other:<br /><br />
 		VAS<br />
 		- Kronzky<br />
